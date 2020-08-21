@@ -1,33 +1,42 @@
+
 body {
   height: 100vh;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   background: transparent;
 }
 
 .wrap {
   position: relative;
-  -webkit-perspective: 100px;
-          perspective: 100px;
+  perspective: 50px;
   text-transform: lowercase;
 }
 
 .text {
+
   position: absolute;
   top: 0;
   left: 0;
-  color: white;
-  font-size: 10vw;
+  color: rgb(255,255,255);
+  font-size: 6vw;
   font-weight: bold;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-.text:first-child {
-  position: relative;
+  text-shadow:
+   -0.2px -0.2px 0 rgba(0,0,0,1),  
+    0.2px -0.2px 0 rgba(0,0,0,1),
+    -0.2px 0.2px 0 rgba(0,0,0,1),
+     0.2px 0.2px 0 rgba(0,0,0,1);
+  transform-style: preserve-3d;
+    
+  &:first-child {
+    position: relative;
+    // transform: translate3d(1px, 1px, 5px);
+  }
+  
+  // @for $i from 2 through 11 {
+  //   &:nth-child(#{$i}) {
+  //     transform: translate3d(#{$i + 1}px, #{$i + 1}px, #{$i + 5}px);
+  //   }
+  // }
 }
