@@ -9,7 +9,7 @@ body {
 
 .wrap {
   position: relative;
-  perspective: 50px;
+  perspective: 100px;
   text-transform: lowercase;
 }
 
@@ -19,7 +19,7 @@ body {
   top: 0;
   left: 0;
   color: rgb(255,255,255);
-  font-size: 7vw;
+  font-size: 12vw;
   font-weight: bold;
   text-shadow:
    -0.2px -0.2px 0 rgba(0,0,0,1),  
